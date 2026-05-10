@@ -66,7 +66,8 @@
 <div class="shop" id="shop"></div>
   <!-- scrip for the cards to be pushed onto a list -->
 <script>
-
+  
+const shop = document.getElementById("shop");
   
   function renderShop() {
   shop.innerHTML = "";
@@ -82,12 +83,12 @@
     `;
   });
 }
-  const cards = [
-  { name: "Pikachu", price: "$5", img: "pikachu.jpg" }
-];
-  cards.push({ name: "Pikachu", price: "$5", img: "IMG_2322.jpg" });
-  cards.push({ name: "Charizard", price: "$20", img: "charizard.jpg" });
-  cards.push({ name: "Bulbasaur", price: "$8", img: "bulba.jpg" });
+  const cards = [];
+cards.push({ name: "Pikachu", price: "$5", img: "pikachu.jpg" });
+cards.push({ name: "Pikachu", price: "$5", img: "IMG_2322.jpg" });
+cards.push({ name: "Charizard", price: "$20", img: "charizard.jpg" });
+cards.push({ name: "Bulbasaur", price: "$8", img: "bulba.jpg" });
+
 renderShop();  
 
 </script>
