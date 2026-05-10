@@ -70,18 +70,6 @@ const cards = [
   { name: "Pikachu", price: "$5", img: "IMG_2322.jpg" },
 ];
 
-const shop = document.getElementById("shop");
-
-cards.forEach(card => {
-  shop.innerHTML += `
-    <div class="card">
-      <img src="${card.img}">
-      <h3>${card.name}</h3>
-      <p>${card.price}</p>
-      <button>Buy</button>
-    </div>
-  `;
-});
 
   function renderShop() {
   shop.innerHTML = "";
@@ -92,6 +80,7 @@ cards.forEach(card => {
         <img src="${card.img}">
         <h3>${card.name}</h3>
         <p>${card.price}</p>
+          <button>Buy</button>
       </div>
     `;
   });
