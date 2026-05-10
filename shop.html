@@ -7,3 +7,93 @@
   <h1>Card Shop Page</h1>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shop</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    /* 🔲 This is the “spots” layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    /* 🧱 Each card slot */
+    .card {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .price {
+      font-weight: bold;
+      margin: 8px 0;
+    }
+
+    button {
+      background: black;
+      color: white;
+      border: none;
+      padding: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Card Shop</h1>
+
+<div class="grid">
+
+  <!-- 🃏 CARD SLOT 1 -->
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Pikachu</h3>
+    <p class="price">$5</p>
+    <button>Buy</button>
+  </div>
+
+  <!-- 🃏 CARD SLOT 2 -->
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Charizard</h3>
+    <p class="price">$20</p>
+    <button>Buy</button>
+  </div>
+
+  <!-- 🃏 CARD SLOT 3 -->
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Trainer Card</h3>
+    <p class="price">$12</p>
+    <button>Buy</button>
+  </div>
+
+</div>
+
+</body>
+</html>
