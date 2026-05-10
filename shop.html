@@ -5,7 +5,6 @@
 
   <style>
     body {
-      cards.push({ name: "Charizard", price: "$20", img: "charizard.jpg" });
     h1 {
     }
         text-align: center;
@@ -83,7 +82,26 @@ cards.forEach(card => {
     </div>
   `;
 });
+
+  function renderShop() {
+  shop.innerHTML = "";
+
+  cards.forEach(card => {
+    shop.innerHTML += `
+      <div class="card">
+        <img src="${card.img}">
+        <h3>${card.name}</h3>
+        <p>${card.price}</p>
+      </div>
+    `;
+  });
+}
+    renderShop();
+  cards.push({ name: "Charizard", price: "$20", img: "charizard.jpg" });
+renderShop();  
+
 </script>
+
   
 </body>
 </html>
